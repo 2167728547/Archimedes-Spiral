@@ -8,10 +8,10 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-                "program": "C:/TDM-GCC-64/bin/g++.exe",
-            "args": ["C:/Users/admin/.vscode/ArchSpiral/ArchSpiral.cpp"],
+            "program": "C:/TDM-GCC-64/bin/g++.exe",
+            "args": ["${workspaceFolder}/ArchSpiral.cpp", "-L", "C:/msys64/mingw64/lib", "-l", "SDL2", "-o", "${workspaceFolder}/output/ArchSpiral.exe"],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "externalTerminal"
         }

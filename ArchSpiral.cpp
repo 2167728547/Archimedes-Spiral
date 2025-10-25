@@ -3,38 +3,46 @@
 
 #include "SDL2/SDL.h"
 
-#define WIDTH 800
-#define HEIGHT 600
+#define WIDTH 400
+#define HEIGHT 700
 
- int main(){
+ int main(int argc, char* argv[]){
 
     SDL_Init(SDL_INIT_VIDEO);
 
-    SDL_Window *window = SDL_CreateWindow("Archimedes Spiral",
-        SDL_WINDOWPOS_CENTERED,
-        SDL_WINDOWPOS_CENTERED,
-        WIDTH,
-        HEIGHT,
-        SDL_WINDOW_SHOWN);
+    SDL_Window *window = SDL_CreateWindow(  "Archimedes Spiral",
+                                            SDL_WINDOWPOS_CENTERED,
+                                            SDL_WINDOWPOS_CENTERED,
+                                            WIDTH,
+                                            HEIGHT,
+                                            SDL_WINDOW_SHOWN);
 
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
 
-    double XS, YS, XT, YT, ZS;
-    int ZI, XIi;
+    int ZI = 0,
+        XIi= 0;
+
+    double  XS = 0,
+            XP = 0,
+            YS = 0,
+            XT = 0,
+            YT = 0,
+            ZS = 0,
+            ZT = 0;
+
     const double PI = 3.141592653589793;
 
-    SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-
-    for (ZI = -64; ZI <= 64; ZI++) {
+    for (ZI = -128; ZI <= 128; ZI++) {
 
         ZS = ZI * ZI / 2.25;
-        for (XIi = -64; XIi <= 64; XIi++) {
+
+        for (XIi = -128; XIi <= 128; XIi++) {
 
             XS = XIi / 64.0;
-            XT = XS * PI;
+            XP = XS * PI;
 
             YS = sqrt(XIi * XIi + ZS) * 27;
             XT = sqrt(XIi * XIi + ZS) * 0.5;
@@ -44,13 +52,12 @@
             int X = (int)(WIDTH / 2 + XIi * 4);
             int Y = (int)(HEIGHT / 2 - YT - ZI * 2);
 
-            SDL_RenderDrawPoint(renderer, X, Y);
+            SDL_SetRenderDrawColor(renderer, 0, XIi * 2, 0, XIi);
+            SDL_RenderDrawPoint(renderer, (X / 4) + 150, (Y / 16) + 300);
         }
     }
 
     SDL_RenderPresent(renderer);
-
-    printf("Done!\n");
 
     SDL_Event e;
     int running = 1;
@@ -61,7 +68,6 @@
                 running = 0;
             }
         }
-        SDL_Delay(16);
     }
 
     SDL_DestroyRenderer(renderer);
@@ -69,8 +75,4 @@
     SDL_Quit();
 
     return 0;
- }
- void test(SDL_Renderer *renderer)
- {
-     SDL_RenderPresent(renderer);
  }
