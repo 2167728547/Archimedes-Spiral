@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "C:/msys64/mingw64/include/SDL2/SDL.h"
+#include "SDL2/SDL.h"
 
 #define WIDTH 800
 #define HEIGHT 600
@@ -69,4 +69,8 @@
     SDL_Quit();
 
     return 0;
-}
+ }
+ void test(SDL_Renderer *renderer)
+ {
+     SDL_RenderPresent(renderer);
+ }

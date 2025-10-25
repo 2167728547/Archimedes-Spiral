@@ -7,7 +7,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "includePath": ["C:/msys64/mingw64/include/SDL2"],
+            "includePath": [""],
             "intelliSenseMode": "${default}",
             "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",
             "cStandard": "${default}",

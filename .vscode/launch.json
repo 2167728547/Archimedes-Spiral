@@ -9,7 +9,7 @@
             "type": "cppvsdbg",
             "request": "launch",
                 "program": "C:/TDM-GCC-64/bin/g++.exe",
-            "args": [],
+            "args": ["C:/Users/admin/.vscode/ArchSpiral/ArchSpiral.cpp"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
