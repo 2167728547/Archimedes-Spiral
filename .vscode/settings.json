@@ -1,5 +1,8 @@
 {
     "C_Cpp.default.compilerPath": "a:/TDM-GCC-64/bin/g++.exe",
     "C_Cpp.errorSquiggles": "enabled",
-    "C_Cpp.default.includePath": ["C:/msys64/mingw64/include/SDL2/"]
+    "C_Cpp.default.includePath": [
+        "C:/msys64/mingw64/include/SDL2/"
+    ],
+    "dotnet.defaultSolution": "ArchSpiral.sln"
 }
