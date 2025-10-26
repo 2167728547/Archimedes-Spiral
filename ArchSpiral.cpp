@@ -25,7 +25,7 @@
     int ZI = 0,
         XIi= 0;
 
-    double  XS = 10,
+    double  XS = 0,
             XP = 0,
             YS = 0,
             XT = 0,
