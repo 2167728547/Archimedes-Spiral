@@ -8,8 +8,7 @@
             "type": "sldb",
             "request": "launch",
             "name": "(sldb) Launch",
-            "program": "${workspaceFolder}/myexe",
-            "args": ["aaa", "bbb"]
+            "program": "c:/Users/Lenovo/.vscode/Archimedes-Spiral/output/ArchSpiral.exe"
         }
 
     ]
