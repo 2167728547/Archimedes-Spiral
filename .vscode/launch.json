@@ -8,6 +8,6 @@
             "type": "sldb",
             "request": "launch",
             "name": "(sdlb) Launch",
-            "program": "enter program name here, for example /my_program"
+            "program": "C:/Users/admin/.vscode/ArchSpiral/output/ArchSpiral.exe"
         },                                                                                                                     ]
 }
