@@ -5,11 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "sldb",
+            "name": "Launch",
+            "type": "lldb",
             "request": "launch",
-            "name": "(sldb) Launch",
-            "program": "c:/Users/Lenovo/.vscode/Archimedes-Spiral/output/ArchSpiral.exe"
+            "program": "${workspaceRoot}/<your program>",
+            "args": [],
+            "cwd": "${workspaceRoot}"
         }
-
     ]
 }
