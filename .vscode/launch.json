@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/<your program>",
+            "name": "Launch",
+            "program": "${workspaceFolder}/build/Debug/Archimedes-Spiral.exe",
             "args": [],
-            "cwd": "${workspaceRoot}"
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
