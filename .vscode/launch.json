@@ -9,9 +9,9 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch",
-            "program": "${workspaceFolder}/build/Debug/Archimedes-Spiral.exe",
+            "program": "",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": ""
         }
     ]
 }
