@@ -10,8 +10,7 @@
             "request": "launch",
             "name": "Launch",
             "program": "C:/Users/admin/.vscode/ArchSpiral/output/ArchSpiral.exe",
-            "args": [],
-            "cwd": "C:/Users/admin/.vscode/ArchSpiral/output/"
+            "args": []
         }
     ]
 }
