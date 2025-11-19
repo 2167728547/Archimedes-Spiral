@@ -11,7 +11,7 @@
             "name": "Launch",
             "program": "C:/Users/admin/.vscode/ArchSpiral/output/ArchSpiral.exe",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "C:/Users/admin/.vscode/ArchSpiral/output/"
         }
     ]
 }
