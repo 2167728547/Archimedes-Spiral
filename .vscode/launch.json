@@ -9,7 +9,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch",
-            "program": "C:/Users/admin/.vscode/ArchSpiral/ArchSpiral.cpp",
+            "program": "C:/Users/admin/.vscode/ArchSpiral/output/ArchSpiral.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
