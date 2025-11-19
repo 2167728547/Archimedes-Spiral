@@ -8,9 +8,8 @@
             "name": "Launch",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/<your program>",
-            "args": [],
-            "cwd": "${workspaceRoot}"
+            "program": "c:/Users/Lenovo/.vscode/Archimedes-Spiral/output/ArchSpiral.exe",
+            "args": []
         }
     ]
 }
