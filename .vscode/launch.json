@@ -8,10 +8,14 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Launch",
-            "program": "",
-            "args": [],
-            "cwd": ""
+            "name": "Custom launch",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/<program>"
+            ],
+            "processCreateCommands": [
+                "settings set target.run-args value1 value2 value3",
+                "process launch"
+            ]
         }
     ]
 }
