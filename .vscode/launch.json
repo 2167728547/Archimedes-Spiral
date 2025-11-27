@@ -5,6 +5,47 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/<program>",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Custom launch",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/<program>"
+            ],
+            "processCreateCommands": [
+                "settings set target.run-args value1 value2 value3",
+                "process launch"
+            ]
+        },
+        {
+            "type": "lldb",
+            "request": "attach",
+            "name": "Attach",
+            "pid": "${command:pickMyProcess}" // use ${command:pickProcess} to pick other users' processes
+        },
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Script debugging",
+            "cmakeDebugType": "script",
+            "scriptPath": "${workspaceFolder}/<...>.cmake"
+        },
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
+        {
             "type": "cmake",
             "request": "launch",
             "name": "CMake: Configure project",
